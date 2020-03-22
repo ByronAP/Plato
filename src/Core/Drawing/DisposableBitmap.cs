@@ -8,7 +8,7 @@ namespace PlatoCore.Drawing
     
     public class DisposableBitmap : IDisposableBitmap
     {
-        private Bitmap _butmap;
+        private Bitmap _bitmap;
 
         private readonly BitmapOptions _options;
 
@@ -25,14 +25,14 @@ namespace PlatoCore.Drawing
         
         public Bitmap Render(Action<Bitmap> renderer)
         {
-            _butmap = new Bitmap(_options.Width, _options.Height, PixelFormat.Format32bppArgb);
-            renderer(_butmap);
-            return _butmap;
+            _bitmap = new Bitmap(_options.Width, _options.Height, PixelFormat.Format32bppArgb);
+            renderer(_bitmap);
+            return _bitmap;
         }
 
         public void Dispose()
         {
-            _butmap?.Dispose();
+            _bitmap?.Dispose();
         }
 
     }
