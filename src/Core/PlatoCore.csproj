@@ -23,7 +23,6 @@
 
     <!-- 3rd Party Packages -->
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="CoreCompat.System.Drawing.v2" Version="5.2.0-preview1-r131" />
     <PackageReference Include="YamlDotNet" Version="8.1.0" />
     <!-- /3rd Party Packages -->
 
